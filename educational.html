@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      :root {
+        --bs-primary: #d4af37; /* Gold */
+        --bs-primary-rgb: 212, 175, 55;
+        --bs-secondary: #000000; /* Black */
+        --bs-secondary-rgb: 0, 0, 0;
+        --bs-body-bg: #ffffff; /* White */
+        --bs-body-bg-rgb: 255, 255, 255;
+        --bs-body-color: #000000; /* Black text */
+        --bs-body-color-rgb: 0, 0, 0;
+        --bs-link-color: #d4af37;
+        --bs-link-hover-color: #000000;
+      }
+
+      body {
+        background-color: var(--bs-body-bg) !important;
+        color: var(--bs-body-color) !important;
+        font-family: "Times New Roman", Times, serif !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        font-family: "Times New Roman", Times, serif !important;
+      }
+
+      .bg-primary {
+        background-color: var(--bs-primary) !important;
+        color: #000000 !important;
+      }
+
+      .bg-secondary {
+        background-color: var(--bs-secondary) !important;
+        color: #ffffff !important;
+      }
+
+      .text-secondary {
+        color: var(--bs-secondary) !important;
+      }
+
+      .text-white {
+        color: #ffffff !important;
+      }
+
+      /* Masthead styling */
+      .masthead {
+        background-color: var(--bs-body-bg) !important;
+        color: var(--bs-body-color) !important;
+        border-bottom: 10px solid var(--bs-primary);
+      }
+      .masthead .masthead-heading {
+        color: var(--bs-secondary) !important;
+      }
+      .masthead .masthead-subheading {
+        color: var(--bs-secondary) !important;
+      }
+
+      /* Divider colors and visibility */
+      .divider-custom {
+        display: none !important;
+      }
+      .divider-custom .divider-custom-line {
+        background-color: var(--bs-primary);
+      }
+      .divider-custom .divider-custom-icon {
+        color: var(--bs-primary);
+      }
+      .divider-custom.divider-light .divider-custom-line {
+        background-color: var(--bs-secondary) !important;
+      }
+      .divider-custom.divider-light .divider-custom-icon {
+        color: var(--bs-secondary) !important;
+      }
+
+      /* Buttons */
+      .btn-primary {
+        background-color: var(--bs-secondary) !important;
+        border-color: var(--bs-secondary) !important;
+        color: #ffffff !important;
+      }
+      .btn-primary:hover {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+        color: #000000 !important;
+      }
+
+      .btn-outline-light {
+        color: var(--bs-secondary) !important;
+        border-color: var(--bs-secondary) !important;
+      }
+      .btn-outline-light:hover {
+        background-color: var(--bs-secondary) !important;
+        color: #ffffff !important;
+      }
+
+      /* Navbar */
+      #mainNav {
+        background-color: #ffffff !important;
+        border-bottom: 2px solid var(--bs-primary);
+      }
+      #mainNav .navbar-brand {
+        color: var(--bs-secondary) !important;
+      }
+      #mainNav .nav-link {
+        color: var(--bs-secondary) !important;
+      }
+      #mainNav .nav-link.active,
+      #mainNav .nav-link:hover {
+        color: var(--bs-body-bg) !important;
+        background-color: var(--bs-primary) !important;
+      }
+      #mainNav .navbar-toggler {
+        background-color: var(--bs-primary);
+        color: var(--bs-secondary);
+      }
+
+      /* Footer */
+      .footer {
+        background-color: var(--bs-secondary) !important;
+        color: #ffffff !important;
+      }
+      .footer h4,
+      .footer p,
+      .footer a {
+        color: #ffffff !important;
+      }
+      .copyright {
+        background-color: #000000 !important;
+        color: var(--bs-primary) !important;
+        border-top: 2px solid var(--bs-primary);
+      }
+
+      /* Input controls */
+      .form-control {
+        border: 1px solid var(--bs-primary);
+      }
+      .form-control:focus {
+        border-color: var(--bs-secondary);
+        box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+      }
+
+      /* Timeline specific styles */
+      .experience-timeline {
+        max-width: 800px;
+        margin: 0 auto;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .experience-timeline h3 {
+        color: #000000;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+      .job {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+      }
+      .job h4 {
+        color: #000000;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .job p,
+      .job ul {
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html#page-top"
+          >Professional Resume</a
+        >
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="index.html#page-top"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded active"
+                href="index.html#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="index.html#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="index.html#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Content Section -->
+    <section
+      class="page-section"
+      style="
+        background-color: #ffffff;
+        padding-top: 150px;
+        padding-bottom: 100px;
+      "
+    >
+      <div class="container">
+        <div
+          class="card p-4 p-md-5 shadow border-0"
+          style="background-color: var(--bs-primary); border-radius: 1rem"
+        >
+          <div class="card-body">
+            <!-- Education Background -->
+            <div class="experience-timeline mb-5">
+              <h3>Education Background</h3>
+              <div class="job" style="border-left: 4px solid #000000">
+                <h4>Bachelor of Science in Business Administration</h4>
+                <p>
+                  <em>Major in Operations Management</em><br />
+                  <em>Cavite State University | Cavite, Philippines</em>
+                </p>
+                <ul>
+                  <li>
+                    <strong>Relevant Coursework:</strong> Business
+                    Communication, Office Administration, Management Information
+                    Systems, and Organizational Behavior.
+                  </li>
+                  <li>
+                    <strong>Leadership & Admin Experience:</strong> Served as
+                    Executive Secretary for the university's Business Management
+                    Society, where I handled scheduling, drafted meeting
+                    minutes, and managed email correspondence for a student body
+                    of over 300 members.
+                  </li>
+                  <li>
+                    <strong>Academic Achievement:</strong> Maintained consistent
+                    Dean's Lister status, demonstrating strong work ethic, time
+                    management, and dedication to high-quality outputs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="experience-timeline">
+              <h3>Professional Experience</h3>
+              <div class="job" style="border-left: 4px solid #000000">
+                <h4>Customer Service Representative</h4>
+                <p><em>BGC, Philippines | 4 Years</em></p>
+                <ul>
+                  <li>
+                    Managed and resolved a high volume of complex customer
+                    inquiries efficiently.
+                  </li>
+                  <li>
+                    Maintained detailed and accurate records of client
+                    interactions and transactions in CRM databases.
+                  </li>
+                  <li>
+                    Consistently met and exceeded strict corporate metrics for
+                    quality, problem-solving, and response time.
+                  </li>
+                  <li>
+                    Demonstrated resilience, time management, and dedication in
+                    a demanding, fast-paced corporate environment.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Location</h4>
+            <p class="lead mb-0">
+              Cavite, Philippines
+              <br />
+              Boston, General Trias 143
+            </p>
+          </div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Social Media</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-twitter"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-linkedin-in"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-dribbble"></i
+            ></a>
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">Applicant</h4>
+            <p class="lead mb-0">Currently seeking remote opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Your Website 2023</small>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

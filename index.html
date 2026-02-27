@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      :root {
+        --bs-primary: #d4af37; /* Gold */
+        --bs-primary-rgb: 212, 175, 55;
+        --bs-secondary: #000000; /* Black */
+        --bs-secondary-rgb: 0, 0, 0;
+        --bs-body-bg: #ffffff; /* White */
+        --bs-body-bg-rgb: 255, 255, 255;
+        --bs-body-color: #000000; /* Black text */
+        --bs-body-color-rgb: 0, 0, 0;
+        --bs-link-color: #d4af37;
+        --bs-link-hover-color: #000000;
+      }
+
+      body {
+        background-color: var(--bs-body-bg) !important;
+        color: var(--bs-body-color) !important;
+        font-family: "Times New Roman", Times, serif !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        font-family: "Times New Roman", Times, serif !important;
+      }
+
+      .bg-primary {
+        background-color: var(--bs-primary) !important;
+        color: #000000 !important;
+      }
+
+      .bg-secondary {
+        background-color: var(--bs-secondary) !important;
+        color: #ffffff !important;
+      }
+
+      .text-secondary {
+        color: var(--bs-secondary) !important;
+      }
+
+      .text-white {
+        color: #ffffff !important;
+      }
+
+      /* Masthead styling */
+      .masthead {
+        background-color: var(--bs-body-bg) !important;
+        color: var(--bs-body-color) !important;
+        border-bottom: 10px solid var(--bs-primary);
+      }
+      .masthead .masthead-heading {
+        color: var(--bs-secondary) !important;
+      }
+      .masthead .masthead-subheading {
+        color: var(--bs-secondary) !important;
+      }
+
+      /* Divider colors and visibility */
+      .divider-custom {
+        display: none !important;
+      }
+      .divider-custom .divider-custom-line {
+        background-color: var(--bs-primary);
+      }
+      .divider-custom .divider-custom-icon {
+        color: var(--bs-primary);
+      }
+      .divider-custom.divider-light .divider-custom-line {
+        background-color: var(--bs-secondary) !important;
+      }
+      .divider-custom.divider-light .divider-custom-icon {
+        color: var(--bs-secondary) !important;
+      }
+
+      /* Buttons */
+      .btn-primary {
+        background-color: var(--bs-secondary) !important;
+        border-color: var(--bs-secondary) !important;
+        color: #ffffff !important;
+      }
+      .btn-primary:hover {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+        color: #000000 !important;
+      }
+
+      .btn-outline-light {
+        color: var(--bs-secondary) !important;
+        border-color: var(--bs-secondary) !important;
+      }
+      .btn-outline-light:hover {
+        background-color: var(--bs-secondary) !important;
+        color: #ffffff !important;
+      }
+
+      /* Navbar */
+      #mainNav {
+        background-color: #ffffff !important;
+        border-bottom: 2px solid var(--bs-primary);
+      }
+      #mainNav .navbar-brand {
+        color: var(--bs-secondary) !important;
+      }
+      #mainNav .nav-link {
+        color: var(--bs-secondary) !important;
+      }
+      #mainNav .nav-link.active,
+      #mainNav .nav-link:hover {
+        color: var(--bs-body-bg) !important;
+        background-color: var(--bs-primary) !important;
+      }
+      #mainNav .navbar-toggler {
+        background-color: var(--bs-primary);
+        color: var(--bs-secondary);
+      }
+
+      /* Footer */
+      .footer {
+        background-color: var(--bs-secondary) !important;
+        color: #ffffff !important;
+      }
+      .footer h4,
+      .footer p,
+      .footer a {
+        color: #ffffff !important;
+      }
+      .copyright {
+        background-color: #000000 !important;
+        color: var(--bs-primary) !important;
+        border-top: 2px solid var(--bs-primary);
+      }
+
+      /* Input controls */
+      .form-control {
+        border: 1px solid var(--bs-primary);
+      }
+      .form-control:focus {
+        border-color: var(--bs-secondary);
+        box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+      }
+    </style>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">Professional Resume</a>
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#page-top"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img
+          class="masthead-avatar mb-5"
+          src="img/Avatar.png"
+          alt="..."
+          style="
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #ffffff;
+          "
+        />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Cathy M. Dela Cruz</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p
+          class="masthead-subheading mb-2"
+          style="font-weight: bold; color: #1e3b5e"
+        >
+          Dedicated Professional Ready to Streamline Your Operations
+        </p>
+        <p
+          class="masthead-subheading font-weight-light mb-0"
+          style="
+            color: #000000;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.6;
+          "
+        >
+          Aspiring Virtual Administrative Assistant bringing 4 years of
+          high-volume corporate customer service experience. Highly adaptable,
+          organized, and ready to support a dynamic remote startup environment.
+        </p>
+      </div>
+    </header>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <!-- About Section Content-->
+        <div class="row align-items-center">
+          <div class="col-lg-4 ms-auto text-center mb-5 mb-lg-0">
+            <!-- About Section Heading-->
+            <h2
+              class="page-section-heading text-uppercase mb-4"
+              style="border-bottom: none; display: block; color: #000000"
+            >
+              About
+            </h2>
+            <img
+              src="img/Picture.png"
+              alt="Profile Picture"
+              style="
+                width: 250px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 6px solid #ffffff;
+                margin: 0 auto;
+                display: block;
+              "
+            />
+          </div>
+          <div class="col-lg-6 me-auto">
+            <p class="lead" style="text-align: justify; color: #000000">
+              With four years of experience managing complex client interactions
+              and delivering top-tier support in a fast-paced corporate
+              environment, I am pivoting my career toward virtual
+              administration. My background has equipped me with a robust set of
+              highly transferable skills, including rigorous time management,
+              meticulous data entry, and proactive problem-solving.
+            </p>
+            <p class="lead" style="text-align: justify; color: #000000">
+              By transitioning to a remote-first workspace, I am eliminating
+              traditional commute constraints to maximize my daily productivity
+              and operational focus. I am highly adaptable and eager to bring my
+              dedication, organizational proficiency, and resilient work ethic
+              to a dynamic startup, helping to streamline operations and support
+              your team’s ongoing success.
+            </p>
+            <p class="lead" style="text-align: justify; color: #000000">
+              If you want to know more about my educational background and
+              transferable skills, please click the buttons below.
+            </p>
+            <!-- About Section Button-->
+            <div class="mt-4 pb-4">
+              <a
+                class="btn btn-outline-light me-2 mb-2"
+                href="educational.html"
+              >
+                <i class="fas fa-graduation-cap me-2"></i>
+                Educational Background & Professional Experience
+              </a>
+              <a class="btn btn-outline-light mb-2" href="skill.html">
+                <i class="fas fa-briefcase me-2"></i>
+                Transferable Skills & Qualifications
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+      <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-5"
+        >
+          Professional Work Samples
+        </h2>
+        <p
+          class="masthead-subheading font-weight-light mb-5"
+          style="
+            color: #000000;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            text-align: center;
+          "
+        >
+          A showcase of administrative and communication documents derived from
+          my corporate customer service experience, demonstrating my readiness
+          for virtual administrative support.
+        </p>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+          <!-- Portfolio Item 1-->
+          <div class="col-md-6 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal1"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/cabin.png" alt="..." />
+            </div>
+          </div>
+          <!-- Portfolio Item 2-->
+          <div class="col-md-6 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal2"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/cake.png" alt="..." />
+            </div>
+          </div>
+          <!-- Portfolio Item 3-->
+          <div class="col-md-6 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal3"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/circus.png" alt="..." />
+            </div>
+          </div>
+          <!-- Portfolio Item 4-->
+          <div class="col-md-6 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal4"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/game.png" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <!-- Contact Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Contact Me
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <!-- Name input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  data-sb-validations="required"
+                />
+                <label for="name">Full name</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  A name is required.
+                </div>
+              </div>
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                  data-sb-validations="required,email"
+                />
+                <label for="email">Email address</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  An email is required.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Email is not valid.
+                </div>
+              </div>
+              <!-- Phone number input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="(123) 456-7890"
+                  data-sb-validations="required"
+                />
+                <label for="phone">Phone number</label>
+                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                  A phone number is required.
+                </div>
+              </div>
+              <!-- Message input-->
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem"
+                  data-sb-validations="required"
+                ></textarea>
+                <label for="message">Message</label>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  A message is required.
+                </div>
+              </div>
+              <!-- Submit success message-->
+              <!---->
+              <!-- This is what your users will see when the form-->
+              <!-- has successfully submitted-->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                  <div class="fw-bolder">Form submission successful!</div>
+                  To activate this form, sign up at
+                  <br />
+                  <a href="https://startbootstrap.com/solution/contact-forms"
+                    >https://startbootstrap.com/solution/contact-forms</a
+                  >
+                </div>
+              </div>
+              <!-- Submit error message-->
+              <!---->
+              <!-- This is what your users will see when there is-->
+              <!-- an error submitting the form-->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">
+                  Error sending message!
+                </div>
+              </div>
+              <!-- Submit Button-->
+              <button
+                class="btn btn-primary btn-xl disabled"
+                id="submitButton"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Location</h4>
+            <p class="lead mb-0">
+              Cavite, Philippines
+              <br />
+              Boston, General Trias 143
+            </p>
+          </div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Social Media</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-twitter"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-linkedin-in"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-dribbble"></i
+            ></a>
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">Applicant</h4>
+            <p class="lead mb-0">Currently seeking remote opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Your Website 2023</small>
+      </div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      aria-labelledby="portfolioModal1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-4"
+                  >
+                    High-Volume Ticket Management
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-4"
+                    src="img/cabin.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p
+                    class="mb-12"
+                    style="
+                      font-family: &quot;Times New Roman&quot;, Times, serif;
+                      font-size: 1.1rem;
+                      color: #000;
+                    "
+                  >
+                    An example of resolving a complex client escalation,
+                    demonstrating professional business communication,
+                    de-escalation, and policy adherence.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      aria-labelledby="portfolioModal2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-4"
+                  >
+                    Daily Interaction Logs & Data Entry
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-4"
+                    src="img/cake.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p
+                    class="mb-12"
+                    style="
+                      font-family: &quot;Times New Roman&quot;, Times, serif;
+                      font-size: 1.1rem;
+                      color: #000;
+                    "
+                  >
+                    A sample CRM tracking sheet showcasing my ability to
+                    maintain accurate, high-volume records of client
+                    transactions and follow-up schedules.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      aria-labelledby="portfolioModal3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-4"
+                  >
+                    Professional Business Communication
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-4"
+                    src="img/circus.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p
+                    class="mb-12"
+                    style="
+                      font-family: &quot;Times New Roman&quot;, Times, serif;
+                      font-size: 1.1rem;
+                      color: #000;
+                    "
+                  >
+                    A portfolio of email correspondence and templates showcasing
+                    my ability to draft clear, concise, and professional
+                    messages for clients and internal teams.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      aria-labelledby="portfolioModal4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-4"
+                  >
+                    Client Follow-up & Task Prioritization
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-4"
+                    src="img/game.png"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p
+                    class="mb-12"
+                    style="
+                      font-family: &quot;Times New Roman&quot;, Times, serif;
+                      font-size: 1.1rem;
+                      color: #000;
+                    "
+                  >
+                    An calendar and task tracker showing how I effectively
+                    scheduled callbacks, managed time-sensitive duties, and
+                    prioritized daily operational tasks.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>
