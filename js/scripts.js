@@ -29,7 +29,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   // Activate Bootstrap scrollspy on the main nav element
   const mainNav = document.body.querySelector("#mainNav");
-  if (mainNav) {
+  const isHomePage = document.body.querySelector("header.masthead");
+  if (mainNav && isHomePage) {
     new bootstrap.ScrollSpy(document.body, {
       target: "#mainNav",
       rootMargin: "0px 0px -40%",
